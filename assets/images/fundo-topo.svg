@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1600 900"
+     preserveAspectRatio="none">
+
+    <defs>
+        <radialGradient id="amarelo"
+                        cx="35%" cy="40%" r="85%">
+            <stop offset="0%" stop-color="#fffda0"/>
+            <stop offset="45%" stop-color="#fffd59"/>
+            <stop offset="100%" stop-color="#f4d52b"/>
+        </radialGradient>
+
+        <radialGradient id="vermelho"
+                        cx="45%" cy="40%" r="80%">
+            <stop offset="0%" stop-color="#ed412b"/>
+            <stop offset="45%" stop-color="#d22c2a"/>
+            <stop offset="100%" stop-color="#970017"/>
+        </radialGradient>
+    </defs>
+
+    <rect width="1600" height="900"
+          fill="url(#amarelo)"/>
+
+    <path fill="url(#vermelho)"
+          d="M 1020 0
+             C 995 160, 875 200, 860 390
+             C 840 590, 920 750, 1000 900
+             H 1600 V 0 Z"/>
+
+    <path fill="url(#vermelho)"
+          d="M 0 390
+             C 30 435, 68 510, 66 580
+             C 64 640, 35 680, 0 710
+             Z"/>
+</svg>

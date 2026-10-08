@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <title>We Love Pizza</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header id="inicio" class="topo-site">
+        <div class="header-conteudo">
+            <a href="#inicio" class="marca" aria-label="We Love Pizza — início">
+                <img
+                    src="assets/images/images.png"
+                    alt="We Love Pizza"
+                    class="logo"
+                >
+
+            </a>
+
+            <nav class="menu-principal" aria-label="Menu principal">
+                <a href="#pizzas" class="link-menu">Nossos sabores</a>
+                <a href="#sobre" class="link-menu">A We Love</a>
+                <a href="#localizacao" class="link-menu">Encontre a gente</a>
+            </nav>
+
+            <a href="#" class="header-pedido abrir-pedido">
+                <span>Quero minha pizza</span>
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                >
+                    <path d="m9 5 7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+
+        <section class="hero hero--pessoa" aria-labelledby="titulo-principal">
+    <div class="hero-texto">
+        <p class="hero-chamada">
+            <span>Mais que pizza, é amor em cada fatia.</span>
+        </p>
+
+        <h1 id="titulo-principal">
+            <span>Quem ama pizza</span>
+            se encontra aqui.
+        </h1>
+
+        <p>
+            Conheça a We Love Pizza e faça seu pedido
+            pelo iFood ou Anotaí.
+        </p>
+
+       <div class="hero-acoes">
+
+    <a href="#" class="hero-botao hero-botao-principal abrir-pedido">
+
+        <svg
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <circle cx="7" cy="24" r="4" />
+            <circle cx="25" cy="24" r="4" />
+            <path d="M7 24h10l4-8H10l-3 8Z" />
+            <path d="M19 6h4l3 14M18 10h6M10 16v-5H4" />
+        </svg>
+
+        <span>Peça agora</span>
+
+        <svg
+            class="icone-seta"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <path d="m9 5 7 7-7 7" />
+        </svg>
+
+    </a>
+
+
+    <a href="#pizzas" class="hero-botao hero-botao-secundario">
+
+        <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <path d="M4 3v5a3 3 0 0 0 6 0V3M7 3v18" />
+            <path d="M20 3c-3 2-4 5-4 9h4V3Zm0 9v9" />
+        </svg>
+
+        <span>Ver cardápio</span>
+
+        <svg
+            class="icone-seta"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <path d="m9 5 7 7-7 7" />
+        </svg>
+
+    </a>
+
+</div>
+    </div>
+
+    <div class="hero-visual">
+        <img
+            src="assets/images/welovecomendo.png"
+            alt="Mulher saboreando uma fatia de pizza"
+            class="hero-imagem"
+            width="682"
+            height="899"
+        >
+    </div>
+</section>
+    </header>
+
+    <main>
+        <!-- PIZZAS -->
+        <section
+            id="pizzas"
+            class="secao-pizzas"
+            aria-labelledby="titulo-pizzas"
+        >
+            <div class="secao-cabecalho">
+                <p class="sobretitulo">Nossas pizzas</p>
+
+                <h2 id="titulo-pizzas">
+                    Qual vai ser a <span>sua favorita?</span>
+                </h2>
+
+                <p>Três sabores para começar a escolher.</p>
+            </div>
+
+            <div class="pizzas-grid">
+                <article class="pizza-card">
+                    <div class="pizza-card-foto">
+                        <img
+                            src="assets/images/pizza-cheese-pepperoni.jpg"
+                            alt="Pizza de pepperoni"
+                            width="600"
+                            height="600"
+                            loading="lazy"
+                        >
+
+                        <span class="pizza-categoria">Salgada</span>
+                    </div>
+
+                    <div class="pizza-card-conteudo">
+                        <h3>Cheese Pepperoni</h3>
+
+                        <p>
+                            Molho de tomate, mussarela, pepperoni
+                            e cream cheese.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="pizza-card">
+                    <div class="pizza-card-foto">
+                        <img
+                            src="assets/images/pizza-frango-requeijao.webp"
+                            alt="Pizza de frango com milho e requeijão"
+                            width="600"
+                            height="600"
+                            loading="lazy"
+                        >
+
+                        <span class="pizza-categoria">Salgada</span>
+                    </div>
+
+                    <div class="pizza-card-conteudo">
+                        <h3>Frango com Requeijão</h3>
+
+                        <p>
+                            Molho especial, mussarela, frango, milho,
+                            requeijão e orégano.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="pizza-card">
+                    <div class="pizza-card-foto">
+                        <img
+                            src="assets/images/pizza-ouro-branco.png"
+                            alt="Pizza doce com chocolate branco e Ouro Branco"
+                            width="600"
+                            height="600"
+                            loading="lazy"
+                        >
+
+                        <span class="pizza-categoria pizza-categoria-doce">
+                            Doce
+                        </span>
+                    </div>
+
+                    <div class="pizza-card-conteudo">
+                        <h3>Ouro Branco</h3>
+
+                        <p>
+                            Creme de leite, raspas de chocolate branco,
+                            chocolate Ouro Branco em pedaços e chocolate
+                            branco derretido por cima.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section
+            id="sobre"
+            class="secao-sobre"
+            aria-labelledby="titulo-sobre"
+        >
+            <div class="sobre-titulo">
+                <p class="sobretitulo">Sobre a We Love Pizza</p>
+
+                <h2 id="titulo-sobre">
+                    Pizza na mesa.<br>
+                    <span>Bons momentos juntos.</span>
+                </h2>
+            </div>
+
+            <div class="sobre-texto">
+                <p>
+                    Uma noite de filme, um encontro com os amigos ou
+                    um jantar em família: sempre cabe uma pizza
+                    nesses momentos.
+                </p>
+
+                <p>
+                    Escolha seu sabor favorito e faça seu pedido
+                    pelo iFood ou Anotaí. A próxima fatia é sua!
+                </p>
+
+                <a href="#pizzas" class="sobre-link">
+                    Explorar os sabores
+                    <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+      <section
+    id="localizacao"
+    class="secao-localizacao"
+    aria-labelledby="titulo-localizacao"
+>
+    <div class="localizacao-conteudo">
+        <h2 id="titulo-localizacao">Nossas lojas</h2>
+
+        <div class="lojas-lista">
+            <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Pontes+Vieira,+726,+Fortaleza,+CE"
+                class="loja-faixa"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <h3>Bairro de Fátima</h3>
+                <address>Av. Pontes Vieira, 726</address>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Silas+Munguba,+3530,+Fortaleza,+CE"
+                class="loja-faixa"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <h3>Itaperi</h3>
+                <address>Av. Silas Munguba, 3530</address>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Frei+Cirilo,+4186,+Fortaleza,+CE"
+                class="loja-faixa"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <h3>Messejana</h3>
+                <address>Av. Frei Cirilo, 4186</address>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Sargento+Hermínio,+9,+Fortaleza,+CE"
+                class="loja-faixa"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <h3>Presidente Kennedy</h3>
+                <address>Av. Sargento Hermínio, 9</address>
+            </a>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Ministro+Albuquerque+Lima,+393,+Fortaleza,+CE"
+                class="loja-faixa"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <h3>Conjunto Ceará</h3>
+                <address>Av. Ministro Albuquerque Lima, 393</address>
+            </a>
+        </div>
+
+        <p class="lojas-horario">
+            Fortaleza · Funcionamento das <strong>11h às 23h</strong>.
+        </p>
+
+        <p class="lojas-instrucao">
+            Selecione uma unidade para abrir o mapa.
+        </p>
+    </div>
+</section>
+    </main>
+
+    <div class="pedido-modal" id="pedidoModal">
+    <div class="pedido-modal-overlay"></div>
+
+    <div class="pedido-modal-conteudo">
+
+        <button class="pedido-modal-fechar" aria-label="Fechar">
+            ×
+        </button>
+
+        <!-- TELA 1 -->
+        <div class="pedido-tela pedido-tela-plataforma ativa">
+
+            <p class="pedido-sobretitulo">WE LOVE PIZZA</p>
+
+            <h2>Como você quer pedir?</h2>
+
+            <p class="pedido-descricao">
+                Escolha sua plataforma preferida.
+            </p>
+
+            <div class="pedido-plataformas">
+
+                <button
+                    class="pedido-plataforma pedido-ifood"
+                    data-plataforma="ifood"
+                >
+                    <img
+                        src="assets/images/ifood-logo.png"
+                        alt="iFood"
+                    >
+
+                    <div>
+                        <strong>iFood</strong>
+                        <span>Pedir pelo iFood</span>
+                    </div>
+
+                    <span class="pedido-seta">→</span>
+                </button>
+
+                <button
+                    class="pedido-plataforma pedido-anotai"
+                    data-plataforma="anotai"
+                >
+                    <img
+                        src="assets/images/anotai-logo.png"
+                        alt="Anotaí"
+                    >
+
+                    <div>
+                        <strong>Anotaí</strong>
+                        <span>Pedir pelo Anotaí</span>
+                    </div>
+
+                    <span class="pedido-seta">→</span>
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- TELA IFOOD -->
+        <div class="pedido-tela pedido-tela-ifood">
+
+            <button class="pedido-voltar">
+                ← Voltar
+            </button>
+
+            <p class="pedido-sobretitulo">IFOOD</p>
+
+            <h2>Escolha a unidade</h2>
+
+            <div class="pedido-unidades">
+
+                <a
+                    href="https://www.ifood.com.br/delivery/fortaleza-ce/we-love-pizza---delivery-express-presidente-kennedy/a19a5c06-ba29-4e22-af86-4915b3cebd06?utm_medium=share"
+                    target="_blank"
+                    rel="noopener"
+                    class="pedido-unidade"
+                >
+                    <div>
+                        <strong>Delivery Express</strong>
+                        <span>Pedir pelo iFood</span>
+                    </div>
+
+                    <span>→</span>
+                </a>
+
+                <a
+                    href="https://www.ifood.com.br/delivery/fortaleza-ce/we-love-pizza-kennedy-presidente-kennedy/3afaceac-fae7-4dd2-bed8-58c41faf3963?utm_medium=share"
+                    target="_blank"
+                    rel="noopener"
+                    class="pedido-unidade"
+                >
+                    <div>
+                        <strong>Kennedy</strong>
+                        <span>Pedir pelo iFood</span>
+                    </div>
+
+                    <span>→</span>
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- TELA ANOTAÍ -->
+        <div class="pedido-tela pedido-tela-anotai">
+
+            <button class="pedido-voltar">
+                ← Voltar
+            </button>
+
+            <p class="pedido-sobretitulo">ANOTAÍ</p>
+
+            <h2>Escolha a unidade</h2>
+
+            <div class="pedido-unidades">
+
+                <a
+                    href="https://tr.ee/9iL0CXA-vK"
+                    target="_blank"
+                    rel="noopener"
+                    class="pedido-unidade"
+                >
+                    <strong>CJ Ceará</strong>
+                    <span>→</span>
+                </a>
+
+                <a
+                    href="https://tr.ee/NvYR5ykQ60"
+                    target="_blank"
+                    rel="noopener"
+                    class="pedido-unidade"
+                >
+                    <strong>Pontes Vieira</strong>
+                    <span>→</span>
+                </a>
+
+                <a
+                    href="https://tr.ee/VTxE3nfeUw"
+                    target="_blank"
+                    rel="noopener"
+                    class="pedido-unidade"
+                >
+                    <strong>Kennedy</strong>
+                    <span>→</span>
+                </a>
+
+                <a
+                    href="https://tr.ee/F6015QDLcm"
+                    target="_blank"
+                    rel="noopener"
+                    class="pedido-unidade"
+                >
+                    <strong>Itaperi</strong>
+                    <span>→</span>
+                </a>
+
+                <a
+                    href="https://tr.ee/Jh0rFrbtMy"
+                    target="_blank"
+                    rel="noopener"
+                    class="pedido-unidade"
+                >
+                    <strong>Messejana</strong>
+                    <span>→</span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
