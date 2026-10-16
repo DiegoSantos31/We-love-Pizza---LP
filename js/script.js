@@ -1,3 +1,7 @@
+/* =========================
+   POPUP DE PEDIDOS
+========================= */
+
 const modal = document.getElementById("pedidoModal");
 
 const botoesAbrir = document.querySelectorAll(".abrir-pedido");
@@ -67,3 +71,60 @@ document.addEventListener("keydown", event => {
         fecharModal();
     }
 });
+
+
+/* =========================
+   APARECER AO ROLAR
+========================= */
+
+function iniciarRevelar() {
+    const semMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (semMovimento || !("IntersectionObserver" in window)) return;
+
+    // Elementos que vão aparecer ao rolar
+    const grupos = [
+        ".secao-cabecalho",
+        ".pizza-card",
+        ".sobre-foto",
+        ".sobre-titulo",
+        ".sobre-texto",
+        ".localizacao-conteudo > h2",
+        ".loja-faixa",
+        ".lojas-horario",
+        ".lojas-instrucao"
+    ];
+
+    // Cards e lojas entram um depois do outro
+    const emSequencia = [".pizza-card", ".loja-faixa"];
+
+    grupos.forEach(seletor => {
+        document.querySelectorAll(seletor).forEach((el, i) => {
+            el.classList.add("revelar");
+
+            if (emSequencia.includes(seletor)) {
+                el.style.setProperty("--atraso", i * 120 + "ms");
+            }
+        });
+    });
+
+    document.documentElement.classList.add("revelar-ativo");
+
+    const observador = new IntersectionObserver(entradas => {
+        entradas.forEach(entrada => {
+            if (!entrada.isIntersecting) return;
+
+            entrada.target.classList.add("visivel");
+            observador.unobserve(entrada.target);
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -40px 0px"
+    });
+
+    document.querySelectorAll(".revelar").forEach(el => {
+        observador.observe(el);
+    });
+}
+
+iniciarRevelar();
