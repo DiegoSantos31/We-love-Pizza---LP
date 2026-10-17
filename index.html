@@ -164,88 +164,162 @@
                 loading="lazy"
             >
 
-            <div class="secao-cabecalho">
-                <p class="sobretitulo">Nossas pizzas</p>
+            <div class="pizzas-topo">
+                <div class="secao-cabecalho">
+                    <p class="sobretitulo">Nossas pizzas</p>
 
-                <h2 id="titulo-pizzas">
-                    Qual vai ser a <span>sua favorita?</span>
-                </h2>
+                    <h2 id="titulo-pizzas">
+                        Qual vai ser a <span>sua favorita?</span>
+                    </h2>
 
-                <p>Três sabores para começar a escolher.</p>
+                    <p>Alguns dos nossos sabores. Tem muito mais no cardápio!</p>
+                </div>
+
             </div>
 
-            <div class="pizzas-grid">
-                <article class="pizza-card">
-                    <div class="pizza-card-foto">
-                        <img
-                            src="assets/images/pizza-cheese-pepperoni.jpg"
-                            alt="Pizza de pepperoni"
-                            width="600"
-                            height="600"
-                            loading="lazy"
-                        >
+            <div class="carrossel" aria-roledescription="carrossel" aria-label="Sabores de pizza">
+            <ul
+                class="pizzas-lista"
+                id="pizzas-lista"
+                tabindex="0"
+            >
+                <li>
+                    <article class="pizza-card">
+                        <div class="pizza-card-foto">
+                            <img
+                                src="assets/images/pizza-cheese-pepperoni.jpg"
+                                alt="Pizza de pepperoni"
+                                width="600"
+                                height="600"
+                                loading="lazy"
+                            >
 
-                        <span class="pizza-categoria">Salgada</span>
-                    </div>
+                            <span class="pizza-categoria">Salgada</span>
+                        </div>
 
-                    <div class="pizza-card-conteudo">
-                        <h3>Cheese Pepperoni</h3>
+                        <div class="pizza-card-conteudo">
+                            <h3>Cheese Pepperoni</h3>
 
-                        <p>
-                            Molho de tomate, mussarela, pepperoni
-                            e cream cheese.
-                        </p>
-                    </div>
-                </article>
+                            <p>Molho de tomate, mussarela, pepperoni e cream cheese.</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="pizza-card">
+                        <div class="pizza-card-foto">
+                            <img
+                                src="assets/images/pizza-frango-requeijao.webp"
+                                alt="Pizza de frango com milho e requeijão"
+                                width="600"
+                                height="600"
+                                loading="lazy"
+                            >
 
-                <article class="pizza-card">
-                    <div class="pizza-card-foto">
-                        <img
-                            src="assets/images/pizza-frango-requeijao.webp"
-                            alt="Pizza de frango com milho e requeijão"
-                            width="600"
-                            height="600"
-                            loading="lazy"
-                        >
+                            <span class="pizza-categoria">Salgada</span>
+                        </div>
 
-                        <span class="pizza-categoria">Salgada</span>
-                    </div>
+                        <div class="pizza-card-conteudo">
+                            <h3>Frango com Requeijão</h3>
 
-                    <div class="pizza-card-conteudo">
-                        <h3>Frango com Requeijão</h3>
+                            <p>Molho especial, mussarela, frango, milho, requeijão e orégano.</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="pizza-card">
+                        <div class="pizza-card-foto">
+                            <img
+                                src="assets/images/pizza-carne-de-sol.jpg"
+                                alt="Pizza de carne de sol com cream cheese saindo do forno"
+                                width="600"
+                                height="600"
+                                loading="lazy"
+                            >
 
-                        <p>
-                            Molho especial, mussarela, frango, milho,
-                            requeijão e orégano.
-                        </p>
-                    </div>
-                </article>
+                            <span class="pizza-categoria">Salgada</span>
+                        </div>
 
-                <article class="pizza-card">
-                    <div class="pizza-card-foto">
-                        <img
-                            src="assets/images/pizza-ouro-branco.png"
-                            alt="Pizza doce com chocolate branco e Ouro Branco"
-                            width="600"
-                            height="600"
-                            loading="lazy"
-                        >
+                        <div class="pizza-card-conteudo">
+                            <h3>Carne de Sol com Cream Cheese</h3>
 
-                        <span class="pizza-categoria pizza-categoria-doce">
-                            Doce
-                        </span>
-                    </div>
+                            <p>Molho de tomate, mussarela, carne de sol, cream cheese e orégano.</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="pizza-card">
+                        <div class="pizza-card-foto">
+                            <img
+                                src="assets/images/pizza-ouro-branco.png"
+                                alt="Pizza doce com chocolate branco e Ouro Branco"
+                                width="600"
+                                height="600"
+                                loading="lazy"
+                            >
 
-                    <div class="pizza-card-conteudo">
-                        <h3>Ouro Branco</h3>
+                            <span class="pizza-categoria pizza-categoria-doce">Doce</span>
+                        </div>
 
-                        <p>
-                            Creme de leite, raspas de chocolate branco,
-                            chocolate Ouro Branco em pedaços e chocolate
-                            branco derretido por cima.
-                        </p>
-                    </div>
-                </article>
+                        <div class="pizza-card-conteudo">
+                            <h3>Ouro Branco</h3>
+
+                            <p>Creme de leite, raspas de chocolate branco, chocolate Ouro Branco em pedaços e chocolate branco derretido por cima.</p>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="pizza-card">
+                        <div class="pizza-card-foto">
+                            <img
+                                src="assets/images/pizza-banana-canela.jpg"
+                                alt="Pizza doce de banana com canela e leite condensado"
+                                width="600"
+                                height="600"
+                                loading="lazy"
+                            >
+
+                            <span class="pizza-categoria pizza-categoria-doce">Doce</span>
+                        </div>
+
+                        <div class="pizza-card-conteudo">
+                            <h3>Banana com Canela</h3>
+
+                            <p>Fatias de banana fresquinha, leite condensado, açúcar, canela e mussarela por baixo.</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+
+                <div class="carrossel-navegacao">
+                    <button
+                        type="button"
+                        class="carrossel-botao carrossel-anterior"
+                        aria-label="Sabor anterior"
+                        aria-controls="pizzas-lista"
+                        hidden
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="m15 5-7 7 7 7" />
+                        </svg>
+                    </button>
+
+                    <div class="carrossel-pontos" hidden></div>
+
+                    <button
+                        type="button"
+                        class="carrossel-botao carrossel-proximo"
+                        aria-label="Próximo sabor"
+                        aria-controls="pizzas-lista"
+                        hidden
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="m9 5 7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Anuncia o sabor atual pra leitores de tela -->
+                <p class="visualmente-oculto" aria-live="polite"></p>
             </div>
         </section>
 
@@ -475,16 +549,64 @@
             </a>
         </div>
 
-        <p class="lojas-horario">
-            Fortaleza · Funcionamento das <strong>11h às 23h</strong>.
-        </p>
-
         <p class="lojas-instrucao">
-            Selecione uma unidade para abrir o mapa.
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" />
+                <circle cx="12" cy="9.5" r="2.5" />
+            </svg>
+            Toque em uma unidade para ver no mapa
         </p>
     </div>
 </section>
     </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-marca">
+                <img
+                    src="assets/images/images.png"
+                    alt="We Love Pizza"
+                    class="rodape-logo"
+                    loading="lazy"
+                >
+
+                <p>Mais que pizza, é amor em cada fatia.</p>
+            </div>
+
+            <div class="rodape-acoes">
+                <a
+                    href="https://www.instagram.com/welovepizzadelivery/"
+                    class="rodape-instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="assets/images/instagram.png"
+                        alt=""
+                        aria-hidden="true"
+                        width="128"
+                        height="127"
+                        loading="lazy"
+                    >
+
+                    <span>
+                        <small>Siga a gente no Instagram</small>
+                        @welovepizzadelivery
+                    </span>
+                </a>
+
+                <a href="#" class="rodape-pedido abrir-pedido">
+                    Peça agora
+                </a>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <p>© 2026 We Love Pizza · Fortaleza, CE</p>
+            <p>Funcionamento das 11h às 23h</p>
+        </div>
+    </footer>
 
     <div class="pedido-modal" id="pedidoModal">
     <div class="pedido-modal-overlay"></div>
